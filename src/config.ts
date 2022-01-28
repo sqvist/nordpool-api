@@ -1,5 +1,5 @@
 'use strict'
-const baseUrl = 'http://www.nordpoolspot.com/api'
+const baseUrl = 'https://www.nordpoolgroup.com/api'
 
 export const config = {
   baseUrl: baseUrl,
