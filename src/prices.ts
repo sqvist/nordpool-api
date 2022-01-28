@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { config } from './config';
 export type PricesProps = {
   area: Array<string> | string;
