@@ -20,7 +20,7 @@ export const DayAheadPricesHourly = async ({
   vat,
 }: PricesProps): Promise<ReturnedValues> => {
   const url = `${config.priceUrlHourly}?currency=${currency},${currency},EUR,EUR`;
-  const response = await axios.get(url);
+  const response = await axios({url: url, method: 'get', responseType: 'json'} );
   const { data } = await response.data;
   const values = [];
   if (data && data.Rows && data.Rows.length) {
